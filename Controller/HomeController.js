@@ -1,3 +1,6 @@
+import { GetProducts } from "../Service/Service.js";
+import { ProductsModel } from "../Model/HomeModel.js";
+
 var globalIndex = 0;
 
 $(document).ready(function() {
@@ -9,13 +12,10 @@ $(document).ready(function() {
 
     }).catch(function(error) {
         console.error('Hubo un problema con la solicitud:', error);
-        // Aquí puedes manejar el error si es necesario
-    });
-    
+    });    
 });
 
 $(window).on("scroll", function() {
-    // Verifica si se ha llegado al final de la página y carga más productos
     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
         MoreProducts();
     }
@@ -42,7 +42,7 @@ function showProducts(products) {
 
         $('#procduct-secction').append(html);
     }
-    globalIndex += 4; // Incrementa globalIndex después de mostrar los productos
+    globalIndex += 4;
 }
 
 function MoreProducts(){
@@ -69,14 +69,5 @@ function MoreProducts(){
 
         $('#procduct-secction').append(html);
     }
-    globalIndex += 4; // Incrementa globalIndex después de mostrar los productos
-}
-
-function GetProducts(){
-    return fetch('https://fakestoreapi.com/products')
-            .then(res => res.json())
-            .catch(error => {
-            console.error('Hubo un problema con la solicitud:', error);
-            return "Servicio no disponible.";
-            });
+    globalIndex += 4;
 }
