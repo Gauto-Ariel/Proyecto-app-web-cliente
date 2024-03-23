@@ -35,11 +35,7 @@ function showProducts(products) {
                                             '</div>' +
                                         '</div>' +
                                     '<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">' +
-<<<<<<< HEAD
-                                '<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Detalles del Producto</a></div>' +
-=======
                                     '<div class="text-center"><a class="btn btn-outline-dark mt-auto product-btn" href="#" data-index="' + i + '">Detalles del Producto</a></div>' +
->>>>>>> origin/dev-2
                             '</div>' +
                         '</div>' +
                     '</div>';
@@ -47,8 +43,6 @@ function showProducts(products) {
         $('#procduct-secction').append(html);
     }
     globalIndex += 4; // Incrementa globalIndex después de mostrar los productos
-<<<<<<< HEAD
-=======
 
     // Eliminar cualquier manejador de eventos previamente asociado
     $('#procduct-secction').off('click', '.product-btn');
@@ -58,7 +52,6 @@ function showProducts(products) {
         var index = $(this).data('index'); // Obtiene el índice del producto desde el atributo de datos
         showProductModal(index);
     });
->>>>>>> origin/dev-2
 }
 
 function MoreProducts(){
@@ -78,12 +71,8 @@ function MoreProducts(){
                                             '</div>' +
                                         '</div>' +
                                     '<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">' +
-<<<<<<< HEAD
-                                '<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Detalles del Producto</a></div>' +
-=======
                                     '<div class="text-center"><a class="btn btn-outline-dark mt-auto product-btn" href="#" data-index="' + i + '">Detalles del Producto</a></div>'
- +
->>>>>>> origin/dev-2
+
                             '</div>' +
                         '</div>' +
                     '</div>';
@@ -91,8 +80,6 @@ function MoreProducts(){
         $('#procduct-secction').append(html);
     }
     globalIndex += 4; // Incrementa globalIndex después de mostrar los productos
-<<<<<<< HEAD
-=======
 
     // Eliminar cualquier manejador de eventos previamente asociado
     $('#procduct-secction').off('click', '.product-btn');
@@ -136,7 +123,6 @@ function showProductModal(index) {
 
     // Mostrar el modal
     $('#productModal').modal('show');
->>>>>>> origin/dev-2
 }
 
 function GetProducts(){
