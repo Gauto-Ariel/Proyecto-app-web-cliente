@@ -124,12 +124,3 @@ function showProductModal(index) {
     // Mostrar el modal
     $('#productModal').modal('show');
 }
-
-function GetProducts(){
-    return fetch('https://fakestoreapi.com/products')
-            .then(res => res.json())
-            .catch(error => {
-            console.error('Hubo un problema con la solicitud:', error);
-            return "Servicio no disponible.";
-            });
-}
