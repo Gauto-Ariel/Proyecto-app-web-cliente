@@ -26,25 +26,25 @@
 					<div class="row gy-3 overflow-hidden">
                         <div class="col-12">
                             <div class="form-floating mb-3">
-                            <input type="text" class="form-control"  id="usuario" placeholder="Mi nombre de usuario" required>
+                            <input type="text" class="form-control"  id="userRegister" placeholder="Mi nombre de usuario" required>
                             <label for="text" class="form-label">Nombre de Usuario</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating mb-3">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+                            <input type="email" class="form-control" name="email" id="emailRegister" placeholder="name@example.com" required>
                             <label for="email" class="form-label">Email</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating mb-3">
-                            <input type="password" class="form-control" name="password" id="password" value="" placeholder="Password" required>
+                            <input type="password" class="form-control" name="password" id="passwordRegister" value="" placeholder="Password" required>
                             <label for="password" class="form-label">Password</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="d-grid">
-                            <button class="btn bsb-btn-2xl btn-primary" type="submit">Registrarse</button>
+                            <button class="btn bsb-btn-2xl btn-primary" type="submit" id="btnRegistrar">Registrarse</button>
                             </div>
                         </div>
 					</div>
@@ -57,5 +57,7 @@
 		</div>
 	</section>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../../Controller/RegisterController.js" type="module"></script>
 </body>
 </html>
